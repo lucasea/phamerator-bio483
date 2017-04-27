@@ -4,12 +4,30 @@ Template.home.onCreated(function() {
 
 });
 
+
 Template.home.onRendered(function () {
    $(document).ready(function(){
-     h = $(document).height() - $('nav').height();
-     //console.log(h);
-     $('.carousel.carousel-slider').carousel({full_width: true});
-     $('.carousel.carousel-slider').height(h);
+/*start slide show at slide one on page load*/
+       let slideIndex = 0;
+       showSlides();
+/*import slides from html code, define slides as a variable*/
+       function showSlides() {
+           let i;
+           let slides = document.getElementsByClassName("mySlides");
+           for (i = 0; i < slides.length; i++) {
+               slides[i].style.display = "none";
+           }
+/* copied from W3 website...automate slides in sequential order */
+           slideIndex++;
+           if (slideIndex> slides.length) {slideIndex = 1}
+           slides[slideIndex-1].style.display = "block";
+           setTimeout(showSlides, 10000); // Change image every 10 seconds
+       }
+/* set up gitter sidecar chat...copied from gitter/sidecar*/
+   ((window.gitter = {}).chat = {}).options = {
+           room: 'phamerator/Lobby'
+
+   };
     });
   });
 
