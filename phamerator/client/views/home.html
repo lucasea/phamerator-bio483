@@ -1,103 +1,32 @@
 <template name = "home">
-
+    <head>
+        <style>
+            body {
+                background-color: #3F48CC;
+            }
+        </style>
+    </head>
+    <!--edited background color in css body tag because html body tag only filled the slideshow div!-->
     <body>
-        <!--<div class = "container">-->
-            <div class="carousel_position">
-                <div class="carousel carousel-slider center" data-indicators="true">
-                    <div class="carousel-item indigo white-text" href="#one!">
-                        <div class = "textAlignment">
-                            <h1>Phamerator</h1>
-                            <br>
-                                <h5>The comparative viral genomics platform for SEA-PHAGES</h5>
+    <!-- import W3 slideshow template!-->
+       <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
-                                <br>
-                                <h5>Swipe or click below to learn more</h5>
-                        </div>
-                    </div>
-                    <div class="carousel-item teal white-text" href="#two!">
-                        <div class="textAlignment">
-                            <h1>Accounts</h1>
-                            <i class="large material-icons">perm_identity</i>
-                            <h5>Make an account using your school email</h5>
-                            <br>
-                            <h5>We'll save your work automatically</h5>
-                        </div>
-                    </div>
-                    <div class="carousel-item purple white-text" href="#three!">
-                        <div class = "textAlignment">
-                            <h1>Genome Maps</h1>
-
-                            <i class="large material-icons">save</i>
-
-                            <h5>Select genomes individually or by subcluster</h5>
-                            <br>
-                            <h5>Download your maps for offline use</h5>
-                        </div>
-                    </div>
-                    <div class="carousel-item blue white-text" href="#four!">
-                        <div class = "textAlignment">
-                            <h1>Coming Soon</h1>
-                            <br>
-                            <h5>Mobile apps for Android and iOS</h5>
-                            <br>
-                            <h5>pham table download</h5>
-                            <br>
-                            <h5>conserved domains</h5>
-                            <br>
-                            <h5>color by pham abundance</h5>
-                            <br>
-                            <h5>color by GC content</h5>
-                        </div>
-                    </div>
-                    <div class="carousel-item green white-text" href="#five!">
-                        <div class = "textAlignment">
-                            <h1>Problems?</h1>
-                            <i class="large material-icons">live_help</i>
-                            <h5>We want to know! Please send us an issue report via Github</h5>
-                            <br>
-                            <a class="btn waves-effect white grey-text darken-text-2" href="https://github.com/scresawn/phamerator/issues">Submit a Github Bug Report</a>
-                        </div>
-                    </div>
-                    <div class="carousel-item pink white-text" href="#six!">
-                        <div class = "textAlignment">
-                            <h1>Phamerator</h1>
-                            is brought to you by:
-                            <ul class="hp">
-                                <li>Steven Cresawn</li>
-                                <li>Rachael St. Jacques</li>
-                                <li>Andrew Lambrechts</li>
-                                <li>Grant Rybnicky</li>
-                                <li>Mia Wenzel</li>
-                            </ul>
-                            <h5>with support from the Howard Hughes Medical Institute SEA-PHAGES program</h5>
-                        </div>
-                    </div>
-                </div>
+    <h2 class="w3-center" style="font-family:HarryPotter;color:aliceblue; font-size: 100">PHAMERATOR</h2>
+        <!--import pictures for slideshow...add fade animation!-->
+            <div class="w3-content w3-display-container">
+                <img class="mySlides w3-animate-fading" src="https://scontent.xx.fbcdn.net/v/t1.0-9/17799248_1437010912986312_1784653687192383326_n.jpg?oh=b0e5ffa4a2e720b6cee885c7f615e34a&oe=59581E74" style="width:100%">
+                <img class="mySlides w3-animate-fading" src="https://scontent-iad3-1.xx.fbcdn.net/v/t31.0-8/18155919_1465917186762351_2343057971965252270_o.jpg?oh=104324995f3c314fab7a47391426e648&oe=59C029F3" style="width:100%">
+                <img class="mySlides w3-animate-fading" src="https://scontent.xx.fbcdn.net/v/t1.0-9/17796140_1437021159651954_498241527486966878_n.jpg?oh=7bbfa7148a80018b5f0804697288f119&oe=599B0380" style="width:100%">
+                <img class="mySlides w3-animate-fading" src="https://scontent-iad3-1.xx.fbcdn.net/v/t31.0-8/18155921_1465917166762353_6194381754328055557_o.jpg?oh=4df993ccd3282fce6ffe04bc89030a4f&oe=5989168F" style="width:100%">
+                <img class="mySlides w3-animate-fading" src="https://scontent-iad3-1.xx.fbcdn.net/v/t31.0-8/18121270_1465917170095686_2189613919129435078_o.jpg?oh=e41af8e66be8fdc3b1a542c97d0ae092&oe=59899861" style="width:100%">
+                <img class="mySlides w3-animate-fading" src="https://scontent-iad3-1.xx.fbcdn.net/v/t31.0-8/18192631_1465922766761793_1603570651013198600_o.jpg?oh=df1fd102da416bef8ae90e4d99e8cade&oe=59951A9D" style="width:100%">
             </div>
 
 
-          <!--  <div class = "acknowledgements_position">
-                <div class="row">
-                    <div class="col s12">
-                        <div class="card-panel teal">
-                          <span class="white-text center">
-                              <h4>Acknowledgements</h4>
-                              <p>The Cresawn Lab would like to thank the Howard Hughes Medical Institute, Dr. Graham Hatful and lab, the SEA-PHAGES program, and James Madison University.</p>
-                          </span>
-                            <div class="row">
-                                <div class="col s12">
-                                    <div class="card-panel white">
-                                        <div class = "ack_images">
-                                            <img src="images/hhmi_logo.jpg" alt="hhmi logo">
-                                            <img src="images/sea_phages_logo_2.png" alt="sea-phages logo">
-                                            <img src="images/jmu_seal.png" alt="jmu logo" >
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>-->
+        <div id='iframediv' style="background-color: #3F48CC">
+        </div>
+    <!-- embed youtube video in iframe!-->
+        <iframe width="650" height="365.17" style="padding:20px;position:absolute;left:25%" src="https://www.youtube.com/embed/PMivT7MJ41M" frameborder="0" allowfullscreen></iframe>
+        <script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
     </body>
 </template>
